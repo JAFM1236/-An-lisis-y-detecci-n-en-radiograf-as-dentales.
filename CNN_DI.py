@@ -1,3 +1,4 @@
+# Bibliotecas utilizadas
 import os
 import cv2
 import numpy as np
@@ -6,8 +7,6 @@ from tensorflow.keras import layers, models
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
-
-# Hola Vamos a clasificar imágenes de dientes impactados o no.
 
 # Recorremos las carpetas de prueba 
 folders_train = ["/Users/kevin22/Desktop/DICNN/Train", "/Users/kevin22/Desktop/Train_Normal", "/Users/kevin22/Desktop/Train_Mandibula"]
@@ -69,4 +68,4 @@ print(conf_matrix)
 # Guardamos el modelo entrenado 
 model.save("teeth_classification_model.h5")
 
-# Listo, ¡modelo entrenado y guardado!
+# Damos por terminado 
